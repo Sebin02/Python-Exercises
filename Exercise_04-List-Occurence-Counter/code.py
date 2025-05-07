@@ -1,3 +1,4 @@
+#to show duplicate items from given list
 sample_list = [10, 20, 60, 30, 20, 40, 30, 60, 70, 80]
 tmp_list=[]
 duplicate_list=[]
