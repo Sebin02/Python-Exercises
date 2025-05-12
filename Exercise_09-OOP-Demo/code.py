@@ -14,21 +14,21 @@ class Employee:
 
     @fullname.setter
     def fullname(self,name):
-        first, last=name.split(' ')
-        self.first=first
+        first, last=name.split(' ') #allow setting full name directly
+        self.first=first            #automatically splits and updates first and last name
         self.last=last
 
     @fullname.deleter
     def fullname(self):
-        print("Delete name")
-        self.first=None
+        print("Delete name")    # allow deleting full name
+        self.first=None         # sets first and last name to None
         self.last=None
 
 emp_1=Employee("John","Doe")
 
-emp_1.fullname="Jane Smith"
+emp_1.fullname="Jane Smith"     # update the full name using the setter
 print(emp_1.first)
 print(emp_1.email)
 print(emp_1.fullname)
 
-del  emp_1.fullname
+del  emp_1.fullname             # delete the full name using the deleter
